@@ -10,14 +10,21 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 function formatMessage(message, maxLength) {
-  const messageLength = message.length;
-  if (messageLength.length <= maxLength) {
+  if (message.length <= maxLength) {
     return message;
   } else {
     const b = message.slice(0, maxLength);
     return `${b}...`;
   }
 }
+// function formatMessage(message, maxLength) {
+//   if (Number(message) === maxLength) {
+//     return message;
+//   } else {
+//     const b = message.slice(0, maxLength);
+//     return `${b}...`;
+//   }
+// }
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
 console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
 console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum facilisis..."
